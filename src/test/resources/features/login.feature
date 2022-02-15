@@ -1,10 +1,10 @@
-@login
+
 Feature: Online Banking Login Feature
 
   Background:
     Given the user is on the login page
 
-
+  @login
   Scenario: Authorize users should be able to login to the application
     And Users logins with user name "username" and password "password"
     Then the "Account Summary" page should be displayed
