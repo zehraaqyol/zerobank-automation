@@ -1,3 +1,4 @@
+@login
 Feature: Account Summary Types in the Account Summary Page
 
   Background:

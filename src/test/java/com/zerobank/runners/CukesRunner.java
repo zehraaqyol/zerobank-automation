@@ -1,20 +1,17 @@
 package com.zerobank.runners;
 
+
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
-// it runs all the class that writing steps
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"json:target/cucumber.json",
-             "html:target/default/html-reports",
-              "rerun:target/rerun.txt"},
         features = "src/test/resources/features",
         glue = "com/zerobank/stepdefinitions",
         dryRun = false,
-        tags = "@login"
+        tags = "@login and not @negative"
 )
 public class CukesRunner {
-
 }
