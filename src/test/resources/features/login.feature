@@ -1,3 +1,4 @@
+@login
 Feature: Online Banking Login Feature
 
   Background:
